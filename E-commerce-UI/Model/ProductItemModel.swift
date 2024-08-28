@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-struct ProductItemModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    ProductItemModel()
+struct ProductItemModel: Identifiable{
+    let id = UUID()
+    let title:String
+    let desc:String
+    let price:Double
+    let image:String
+    let isFavorite:Bool
 }

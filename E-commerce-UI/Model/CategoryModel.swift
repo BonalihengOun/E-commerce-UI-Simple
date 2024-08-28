@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-struct CategoryModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct CategoryModel: Identifiable{
+    let id = UUID()
+    let title:String
+    let desc:String
+    let image:String
+    let position:Bool
 }
 
-#Preview {
-    CategoryModel()
-}
